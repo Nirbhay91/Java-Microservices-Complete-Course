@@ -7,36 +7,62 @@ Java-Microservices-Complete-Course
 ## Part 1: Understanding and Building Java Microservices
 
 ### 1. Introduction to Microservices
-- Definition and need for microservices
-- Core principles and characteristics
-- Advantages and challenges
-- Comparison with monolithic and SOA architectures
+- What is Microservice?
+- Need for Microservices
+- Principles of Microservices
+- Characteristics of a Microservice
+- Benefits of Microservices
+- Limitations of Microservices
+- Comparison with other Architecture Styles
 
 ### 2. Spring Boot and Spring Cloud in Microservices
-- Introduction to Spring Cloud
-- Centralized configuration management
-- Dynamic updates with Spring Cloud Bus
-- Service discovery, client-side load balancing, and circuit breakers
-- API gateways with Zuul
+- What is Spring Cloud?
+- Spring Cloud Configuration - Centralized, Versioned Configuration
+- Dynamic configuration updates with Spring Cloud Bus
+- Service discovery with Spring Cloud Netflix Eureka
+- Client-side load balancing with Spring Cloud Netflix Ribbon  5b
+- Circuit breakers with Spring Cloud Netflix Hystrix
+- Declarative REST clients with Feign
+- Zuul proxy as the API gateway
 
 ### 3. Resilience and Isolation Patterns
-- Circuit breaker pattern with Hystrix
-- Resilience4j for modern Spring applications
-- Health checks and monitoring with Actuator
+- The circuit breaker pattern
+- Leverage Hystrix
+- Hystrix console
+- Troubleshooting
 
-### 4. Distributed Tracing
-- Solving microservices complexity with Sleuth and Zipkin
+### 4. Distributed Tracing using Spring Cloud Sleuth and Zipkin
+- What Problem Distributed Tracing Solves?
+- How Distributed Tracing Works
+- Distributed Tracing using Spring Cloud Sleuth
+- Distributed Tracing with Zipkin
 
 ### 5. Advanced Circuit Breaker Implementation
-- Using Resilience4j for fault tolerance
-- Configuration and monitoring
+- Replacement capabilities available in new Spring Cloud version
+- Adding Resilience4j
+- Actuator /health Endpoint
+- RestTemplate client & Circuit Breaker Fallback method
+- Feign Client & Circuit Breaker Fallback method
+- Circuit Breaker configuration properties
+- Configure Access to Actuator endpoints
+- Monitoring Circuit Breaker events in Actuator
 
 ### 6. Retry Patterns with Resilience4j
-- Implementing retries with annotations and custom logic
+- @Retry annotation
+- Aspect Order
+- Configuration properties
 
 ### 7. Routing and Load Balancing
 - Spring Cloud Gateway for routing
 - Load balancing strategies and custom filters
+- What is a service gateway?
+- Spring Cloud Gateway Architecture
+- Configuring routes in Spring Cloud Gateway
+- Dynamically reload route configuration
+- Built-in Predicates and Filters Factories
+- Creating Custom Filters
+- Global Filters using Spring Cloud Gateway
+- Netflix Eureka Discovery Service Implementation
 
 ### 8. Monitoring with Prometheus and Micrometer
 - Metrics collection and monitoring setup
@@ -46,13 +72,18 @@ Java-Microservices-Complete-Course
 - Messaging with RabbitMQ and Spring Cloud Stream
 - Publishing and consuming messages
 
-### 10. Dynamic Configuration and Stream Processing
-- Spring Cloud Bus for dynamic configuration
-- Data pipelines with Spring Cloud Data Flow
+### 10. Stream Processing Using Spring Cloud Data Flow
+- What is a Data Pipeline?
+- Architectural Overview
+- Components of Spring Cloud Data Flow
+- Steps for Installing Spring Cloud Data Flow
 
-### 11. Scaling Strategies
-- Autoscaling approaches and considerations
-- Scaling based on various parameters
+### 11. Scaling Microservices with Spring Cloud
+- Approaching for Autoscaling
+- Scaling with resource constraints
+- Scaling during specific time periods
+- Scaling based on the message queue length
+- Scaling based on Business Parameters
 
 ## Part 2: Advanced Topics and Deployment
 
