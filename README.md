@@ -87,10 +87,12 @@ Java-Microservices-Complete-Course
 
 ## Part 2: Advanced Topics and Deployment
 
-### 1. Deep Dive into Microservices Patterns
-- Comparison with monolithic applications
-- Event-driven systems and transaction management
-- Saga patterns for distributed transactions
+### 1. Introduction
+- Microservice vs Monolithic application
+- Event-Driven Microservices
+- Transactions in Microservices
+- Choreography-Based Saga
+- Orchestration-Based Saga
 
 ### 2. Axon Server for Event Sourcing
 - Setup and configuration
